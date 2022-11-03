@@ -5,6 +5,7 @@
 * Brianna Tieu - Developer
 
 ## Description of website / app
+* Web log hosting site, where users register to create their own blogs and posts! Users may view other posts and edit past entries. 
 
 ## Launch Codes
 * How to clone/install

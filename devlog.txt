@@ -1,0 +1,14 @@
+2 Whites And A Gray -- Gitae Park (PM), Brianna Tieu, Nada Hameed
+SoftDev
+P00
+DEVLOG
+
+BriannaT -- 2022-11-02 20:43
+- design doc updated after feedback given from class
+    - updated database organization to add time of post to post database (necessary to 
+    identify / account for users creating blog posts with the same titles)
+    - updated database organization to include Blog ID in Blog Database (necessary for users 
+    that may have > 1 blog
+    - updated site map for greater clarity of home page functionality 
+- complete README with brief app description
+- link submodule again
