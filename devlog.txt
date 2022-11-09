@@ -18,6 +18,16 @@ p00
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
+Brianna Tieu -- 2022-11-02 20:43
+--------------------------------------------------------------
+- design doc updated after class feedback:
+    - adding time of posts to database to account for blog posts with same titles
+    - including blog ID to blog database for users that may have more than 1 blog
+    - updated site map
+- linked submodule again
+- updated README
+==============================================================
+
 Gitae Park -- 11/7/2022 1:16 PM
 --------------------------------------------------------------
 - We found and ate cookies.
