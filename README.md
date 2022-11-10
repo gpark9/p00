@@ -8,6 +8,11 @@
 * Web log hosting site, where users register to create their own blogs and posts! Users may view other posts and edit past entries. 
 
 ## Launch Codes
-* How to clone/install
+* 1) Clone the repo
     * ```git clone https://github.com/gpark9/p00.git``` (HTTPS) 
     * ```git clone git@github.com:gpark9/p00.git``` (SSH)
+* 2) Install required packages
+    * ```pip install -r requirements.txt```
+* 3) Run
+    * ```cd app```
+    * ```python __init__.py```

@@ -33,3 +33,12 @@ Gitae Park -- 11/7/2022 1:16 PM
 - We found and ate cookies.
 - Working sessions
 ==============================================================
+
+
+Brianna Tieu -- 2022-11-09 11:09 PM
+--------------------------------------------------------------
+- fix repo structure to align with assignments page
+- write launch codes
+- populate requirements.txt
+- create a "working" app
+==============================================================
