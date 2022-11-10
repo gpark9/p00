@@ -29,16 +29,24 @@ def index():
     else:
         return render_template( 'login.html' )
 
+def home():
+    return render_template( 'home.html' ) 
+
 #@app.route('/auth', methods=['GET', 'POST'])
 #def authenticate():
 
-@app.route("/register")
+#@app.route("/signUp")
+
+@app.route("/register", methods=['GET', 'POST'])
 def register():
     return render_template( 'register.html' )
-#if request.method == 'GET':
-#    newUser = request.args.get('username')
-#    newPass = request.args.get('password')
-    
+if request.method == 'GET':
+    newUser = request.args.get('username')
+    newPass = request.args.get('password')
+
+command = "INSERT INTO logins (user, password) VALUES ({{newUser}}, {{newPass}})"
+c.execute(command)
+db.commit()
 
 if __name__ == "__main__":
     app.debug = True
