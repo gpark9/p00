@@ -30,7 +30,7 @@ def index():
         return render_template( 'login.html' )
 
 def home():
-    return render_template( 'home.html' ) 
+    return render_template( 'home.html' )
 
 #@app.route('/auth', methods=['GET', 'POST'])
 #def authenticate():
@@ -40,11 +40,13 @@ def home():
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     return render_template( 'register.html' )
-if request.method == 'GET':
-    newUser = request.args.get('username')
-    newPass = request.args.get('password')
 
-command = "INSERT INTO logins (user, password) VALUES ({{newUser}}, {{newPass}})"
+def authenticate():
+    if request.method == 'POST':
+        newUser = request.form['username']
+        newPass = request.form['password']
+
+command =  "INSERT INTO logins VALUES (?,?);", (request.form['username'], request.form['password'])
 c.execute(command)
 db.commit()
 
