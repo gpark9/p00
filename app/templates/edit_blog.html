@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+    2 Whites And A Gray: Gitae Park (PM), Brianna Tieu, Nada Hameed
+    SOFTDEV
+    P00
+-->
+
+
+<html>
+
+  <head>
+    <title>{{blogName}}</title>
+  </head>
+
+  <body>
+    <h1>{{blogName}}</h1>
+    {% for post in postList %}
+        <h3>
+            <li><a href={{ url_for('editEntry', blog=post[0], entry=post[2])}}>{{post[2]}}</a></li>
+        </h3>
+    {% endfor %}
+
+    <form action="/">
+        <button>Home</button>
+    </form>
+
+  </body>
+
+</html>

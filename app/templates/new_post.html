@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    2 Whites And A Gray: Gitae Park (PM), Brianna Tieu, Nada Hameed
+    SOFTDEV
+    P00
+-->
+
+
+<html>
+
+  <head>
+    <title> POST CREATION PAGE </title>
+  </head>
+
+  <body>
+    <h1>
+      Create a post!
+      <br>
+      By: 2 Whites And A Gray
+      Roster: Brianna Tieu, Nada Hameed, Gitae Park
+    </h1>
+
+    <br>
+    <form action="/createpost", method="POST">
+        <h3>
+            Name of the Blog you are posting to (you must own this blog):
+            <input type="text" name="blog_name">
+
+            <br><br>
+
+            Entry Title:
+            <input type="text" name="entry_title">
+
+            <br><br>
+
+            Entry Content:
+            <br>
+            <textarea rows="10" name="postContent"></textarea>
+
+            <br><br>
+        </h3>
+
+        <button>Create Post</button>
+    </form>
+
+    <br>
+    <a href={{ url_for('index')}}>Home Page</a>
+
+  </body>
+
+</html>

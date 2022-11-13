@@ -42,3 +42,22 @@ Brianna Tieu -- 2022-11-09 11:09 PM
 - populate requirements.txt
 - create a "working" app
 ==============================================================
+
+Brianna Tieu -- 2022-11-11 12:37 AM
+--------------------------------------------------------------
+- created a login and post database
+    - users can no longer have blogs with the same name
+- completed capabilities for 
+    - user viewing
+    - new blog creation
+    - entry creation
+    - user logins + registration
+==============================================================
+
+Brianna Tieu -- 2022-11-12 10:58 PM
+--------------------------------------------------------------
+- began implementation of editing post capabilities
+    - still very bugged, unsure of why request.form.get() returns nothing
+- completed capabilities for 
+    - dynamic site paths :o
+==============================================================

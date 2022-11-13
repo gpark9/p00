@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+    2 Whites And A Gray: Gitae Park (PM), Brianna Tieu, Nada Hameed
+    SOFTDEV
+    P00
+-->
+
+
+<html>
+
+  <head>
+    <title>Editing {{entryName}}</title>
+  </head>
+
+  <body>
+      <h1>Editing: <u>{{entryName}} in {{blogName}}</u></h1>
+      
+      <form action="/update", method="POST">
+          <h3>
+              Entry Title: {{entryName}}
+    
+              <br><br>
+    
+              Entry Content:
+              <br>
+              <textarea rows="10" name="content">{{content}}</textarea>
+              <br><br>
+          </h3>
+            <a href={{ url_for('updateEntry', blog=entryElements[0], entry=entryElements[2])}}>Update Entry</a>
+          <br>
+      </form>
+
+    <form action="/">
+        <button>Home</button>
+    </form>
+  </body>
+
+</html>

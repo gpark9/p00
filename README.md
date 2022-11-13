@@ -12,7 +12,7 @@
     * ```git clone https://github.com/gpark9/p00.git``` (HTTPS) 
     * ```git clone git@github.com:gpark9/p00.git``` (SSH)
 * 2) Install required packages
-    * ```pip install -r requirements.txt```
+    * ```pip3 install -r requirements.txt```
 * 3) Run
     * ```cd app```
-    * ```python __init__.py```
+    * ```python3 __init__.py```

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+    2 Whites And A Gray: Gitae Park (PM), Brianna Tieu, Nada Hameed
+    SOFTDEV
+    P00
+-->
+
+
+<html>
+
+  <head>
+    <title> BLOG CREATION PAGE </title>
+  </head>
+
+  <body>
+    <h1>
+      Create a new blog!
+      <br>
+      By: 2 Whites And A Gray
+      Roster: Brianna Tieu, Nada Hameed, Gitae Park
+    </h1>
+
+    <br>
+    <form action="/blog", method="POST">
+        {{status}}
+        <h3>
+            Blog Name:
+            <input type="text" name="blogName">
+        </h3>
+
+        <button>Create Blog</button>
+    </form>
+
+    <br>
+    <a href={{ url_for('index')}}>Home Page</a>
+
+  </body>
+
+</html>
