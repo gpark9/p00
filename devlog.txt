@@ -7,13 +7,13 @@ pd 7
 p00
 
 
- ______   ______   __   __   __       ______   _______     
-/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\    
-\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__  
- \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\ 
-  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/ 
-   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \ 
-    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/ 
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
 ==============================================================
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
@@ -47,7 +47,7 @@ Brianna Tieu -- 2022-11-11 12:37 AM
 --------------------------------------------------------------
 - created a login and post database
     - users can no longer have blogs with the same name
-- completed capabilities for 
+- completed capabilities for
     - user viewing
     - new blog creation
     - entry creation
@@ -58,6 +58,21 @@ Brianna Tieu -- 2022-11-12 10:58 PM
 --------------------------------------------------------------
 - began implementation of editing post capabilities
     - still very bugged, unsure of why request.form.get() returns nothing
-- completed capabilities for 
+- completed capabilities for
     - dynamic site paths :o
+==============================================================
+
+Nada Hameed -- 2022-11-14 8:32 PM
+--------------------------------------------------------------
+- added a navigation bar (started in class)
+- created and populated css files in order to stylize blog and all its paths
+- receive an OperationalError when we try and edit a blog post
+==============================================================
+
+Nada Hameed -- 2022-11-14 7:39 PM
+--------------------------------------------------------------
+- there's still an OperationalError:
+    - sqlite3.OperationalError: no such column: postContent
+      (even though we do have a column postContent...)
+- updated design doc
 ==============================================================
