@@ -51,7 +51,7 @@ def displayBlogs():
         for blog in blogs:
             blogs_String = blogs_String + blog + ', '
     return blogs_String [:-2]
-    
+
 '''
 root of the page:
     - checks if the user is logged in or has an ongoing session
@@ -61,7 +61,7 @@ root of the page:
 @app.route("/")
 def index():
     if 'username' in session:
-        return render_template( 'home.html', status="successfully logged in!", blogs=displayBlogs() )
+        return render_template( 'home.html', status="Successfully logged in!", blogs=displayBlogs() )
     else:
         return render_template( 'login.html' )
 
@@ -82,11 +82,11 @@ def authenticate():
     for user in user_logins:
         if username == user[0] and password == user[1]:
             session['username'] = username
-            return render_template( 'home.html', status="successfully logged in!", blogs=displayBlogs() )
+            return render_template( 'home.html', status="Successfully logged in!", blogs=displayBlogs() )
         if username == user[0] and password != user[1]:
-            return render_template( 'login.html', login="invalid password!" )
-    
-    return render_template( 'login.html', login="submitted username is not registered!" )
+            return render_template( 'login.html', login="Invalid password!" )
+
+    return render_template( 'login.html', login="Submitted username is not registered!" )
 
 '''
 register route:
@@ -113,11 +113,11 @@ def signUp():
 
     for user in user_logins:
         if newUser == user[0]:
-            return render_template( 'register.html' , status="submitted username is already in use.")
+            return render_template( 'register.html' , status="Submitted username is already in use.")
 
     c.execute("INSERT INTO logins VALUES (?,?);", (newUser, newPass))
     db.commit()
-    return render_template( 'login.html', login="new user has been created successfully! log in with your new credentials!" )
+    return render_template( 'login.html', login="New user has been created successfully! Log in with your new credentials!" )
 
 '''
 logout route:
@@ -150,7 +150,7 @@ def createBlog():
 
     for name in allBlogs:
         if request.form['blogName'] == name[0]:
-            return render_template( 'new_blog.html', status="there is already an existing blog with this name! try again." )
+            return render_template( 'new_blog.html', status="There is already an existing blog with this name! Try again." )
 
     c.execute("INSERT INTO blogs (blogName, username) VALUES (?,?);", (request.values['blogName'], session['username'],))
     db.commit()
@@ -177,7 +177,7 @@ def createPost():
     c.execute("INSERT INTO entries VALUES (?,?,?,?);", (request.values['blog_name'], session['username'], request.values['entry_title'], request.values['postContent']))
     db.commit()
     allBlogs = c.execute("SELECT * FROM blogs").fetchall()
-    return render_template( 'view.html', status = "post has been successfully published", blogList=allBlogs )
+    return render_template( 'view.html', status = "Post has been successfully published!", blogList=allBlogs )
 
 '''
 view route:

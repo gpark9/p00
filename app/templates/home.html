@@ -10,48 +10,45 @@
 
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/style.css"
+    <link rel="stylesheet" href="/static/stylehome.css"
   </head>
 
   <body>
     <ul>
       <li><a href="/?">Home Page</a></li>
       <li><a href="/view">View All Existing Blogs</a></li>
+      <li><a href="/newblog">Create New Blog</a></li>
       <li><a href="/edit">Edit Your blogs</a></li>
-    </ul> 
+      <li><a href="/newpost">Create New Post</a></li>
+      <li><a href="/logout">Log Out</a></li>
+    </ul>
     <h1>
       Welcome to the Blog by 2 Whites And A Gray!
-      <br>
-      Roster: Brianna Tieu, Nada Hameed, Gitae Park
     </h1>
+
+    <h5>
+      Roster: Brianna Tieu, Nada Hameed, Gitae Park
+    </h5>
 
     {{status}}
 
-    <form action="/logout">
-      <button>Log Out</button>
-    </form>
 
-    <h2>==================================</h2>
+    <h2>----------------------------------------------------</h2>
 
     <h3>
       Your Blogs:
     </h3>
 
-    {{blogs}}
-    <br><br><br>
+    <h4>
+      {{blogs}}
+    </h4>
 
-    <form action="/newblog">
-      <button>Create New Blog</button>
-    </form>
 
     <br>
 
-    <form action="/newpost">
-      <button>New Post</button>
-    </form>
 
 
-    <h2>==================================</h2>
+    <h2>----------------------------------------------------</h2>
 
 
 
