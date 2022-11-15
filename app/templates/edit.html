@@ -9,14 +9,18 @@
 <html>
 
   <head>
-    <title> YOUR BLOGS PAGE </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styleedit.css">
   </head>
 
   <body>
 
-    <br>
     <form action="/edit", method="POST">
         {{status}}
+
+        <ul>
+          <li><a href="/?">Home Page</a></li>
+        </ul>
 
         <h1>
             YOUR BLOGS!
@@ -31,9 +35,6 @@
 
     </form>
 
-    <form action="/">
-        <button>Home</button>
-    </form>
 
   </body>
 

@@ -10,17 +10,22 @@
 
   <head>
     <title>Editing {{entryName}}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styleedit.css">
   </head>
 
+  <ul>
+    <li><a href="/?">Home Page</a></li>
+  </ul>
   <body>
       <h1>Editing: <u>{{entryName}} in {{blogName}}</u></h1>
-      
+
       <form action="/update", method="POST">
           <h3>
               Entry Title: {{entryName}}
-    
+
               <br><br>
-    
+
               Entry Content:
               <br>
               <textarea rows="10" name="content">{{content}}</textarea>
@@ -30,9 +35,6 @@
           <br>
       </form>
 
-    <form action="/">
-        <button>Home</button>
-    </form>
   </body>
 
 </html>

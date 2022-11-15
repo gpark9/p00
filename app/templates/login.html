@@ -9,22 +9,25 @@
 <html>
 
   <head>
-    <title> LOGIN PAGE </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/stylelogin.css"
   </head>
 
   <body>
     <h1>
       Welcome to the Blog by 2 Whites And A Gray!
-      <br>
-      Roster: Brianna Tieu, Nada Hameed, Gitae Park
     </h1>
 
+    <h2>
+      Roster: Brianna Tieu, Nada Hameed, Gitae Park
+    </h2>
+<br>
     <form action="/auth" method="POST">
       <h3>
         Username:
           <input type="text" name="username">
       </h3>
-  
+
       <h3>
         Password:
           <input type="text" name="password">
@@ -36,6 +39,7 @@
 
       {{login}}
     </form>
+
 
     <form action="/register">
         <button>Register</button>

@@ -10,13 +10,18 @@
 
   <head>
     <title> BLOG NAVIGATION PAGE </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styleview.css">
   </head>
 
   <body>
 
-    <br>
     <form action="/view", method="POST">
         {{status}}
+
+        <ul>
+          <li><a href="/?">Home Page</a></li>
+        </ul>
 
         <h1>
             BLOGS!
@@ -31,9 +36,6 @@
 
     </form>
 
-    <form action="/">
-        <button>Home</button>
-    </form>
 
   </body>
 

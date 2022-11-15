@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+    font-family: 'Papyrus', fantasy;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 0;
+  font-style: italic;
+  font-size: 0.5cm;
+}

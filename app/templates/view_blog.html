@@ -10,22 +10,22 @@
 
   <head>
     <title>{{blogName}}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styleviewblog.css">
   </head>
 
   <body>
-
+    <ul>
+      <li><a href="/?">Home Page</a></li>
+    </ul>
     <h1>{{blogName}}</h1>
     {% for post in postList %}
-        <h2>=========================================</h2>
+        <h2>----------------------------------------------------</h2>
         <h3>
                 <h3>{{post[2]}} by <u>{{post[1]}}</u></h3>
                 <p>{{post[3]}}</p>
         </h3>
       {% endfor %}
-
-    <form action="/">
-        <button>Home</button>
-    </form>
 
   </body>
 
